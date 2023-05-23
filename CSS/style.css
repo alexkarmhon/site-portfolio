@@ -8,6 +8,7 @@
   --accent-color: #2196F3;
   --accent-sec-color: #188ce8;
   --host-white: #ffffff99;
+  --img-bg-color: #2F303A;;
 }
 
 
@@ -48,6 +49,7 @@ ol {
 img {
   display: block;
   width: 100%;
+  background-color: var(--img-bg-color);
   object-fit: cover;
 }
 
@@ -272,8 +274,28 @@ img {
   display: flex;
 }
 
-.features-list-item {
-  
+/* .features-list-item {
+  border: 1px solid tomato;
+} */
+
+.features-list-item:not(:nth-last-child(1)) {
+  margin-right: 30px;
+}
+
+.features-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .features-list .title {
@@ -326,6 +348,8 @@ img {
 .team-card-content {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .team-card .title {
   margin-bottom: 10px;
@@ -337,6 +361,7 @@ img {
   text-transform: uppercase;
 }
 .team-card .position {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -344,6 +369,31 @@ img {
   color:var(--p-text-color);
 }
 
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  fill: #afb1b8;
+}
+
+.social-link-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--main-white-color);
+}
 
 /* Стилі FOOTER */
 .footer {

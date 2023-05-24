@@ -8,7 +8,8 @@
   --accent-color: #2196F3;
   --accent-sec-color: #188ce8;
   --host-white: #ffffff99;
-  --img-bg-color: #2F303A;;
+  --img-bg-color: #2F303A;
+  --icon-fill-color: #afb1b8;
 }
 
 
@@ -115,7 +116,8 @@ img {
 .features .container,
 .works .container,
 .team .container,
-.portfolio .container {
+.portfolio .container,
+.clients .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -381,7 +383,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 22px;
-  fill: #afb1b8;
+  fill: var(--icon-fill-color);
 }
 
 .social-link-icon {
@@ -395,28 +397,98 @@ img {
   fill: var(--main-white-color);
 }
 
-/* Стилі FOOTER */
+/* ==================Стилі CLIENTS=================== */
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-fill-color);
+  border-radius: 4px;
+  fill: var(--icon-fill-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+/* ==================Стилі CLIENTS END=================== */
+
+/* ==================Стилі FOOTER======================== */
 .footer {
   background-color: var(--hero-footer-color);
 }
 
+.footer .container {
+  display: flex;
+  align-items: first baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .adress-part {
+  margin-right: 70px;
+}
+
 .footer .logo-link {
+  display: inline-block;
+  margin-bottom: 20px;
   color: var(--main-white-color);
 }
 
-.map-link {
-  font-size: 14px;
-  line-height: 1.71px;
-  letter-spacing: 0.03em;
-  color: var(--main-white-color)
+.adress-list-item:not(:last-child) {
+  margin-bottom: 8px;
 }
 
-.mail-link, .tel-link {
+.adress-list .link {
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--host-white);
 }
+
+.adress-list .map-link {
+  color: var(--main-white-color)
+}
+
+.footer-call {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+}
+
+.footer .social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--main-white-color);
+}
+
+.footer .social-link:hover,
+.footer .social-link:focus {
+  background-color: var(--accent-color);
+}
+/* ==================Стилі FOOTER END======================== */
 
 /* =====Стилі PORTFOLIO===== */
 
@@ -462,10 +534,15 @@ img {
 }
 
 .projects-list-item {
-  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  border: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.projects-list-item:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+              0px 1px 1px rgba(0, 0, 0, 0.14),
+              0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .card-description {

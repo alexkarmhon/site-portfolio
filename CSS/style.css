@@ -458,6 +458,10 @@ img {
   color: var(--main-white-color)
 }
 
+.adress-list .link:hover {
+  color: var(--accent-color);
+}
+
 .footer-call {
   display: inline-block;
   margin-bottom: 20px;

@@ -126,6 +126,7 @@ img {
 /* =================HEADER===================*/
 .header {
   position: fixed;
+  z-index: 100;
   width: 100%;
   background-color: var(--main-white-color);
   border-bottom: 1px solid #ececec;

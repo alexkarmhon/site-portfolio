@@ -55,7 +55,7 @@
         <h1 class="filter-title title visually-hidden">Portfolio</h1>
         <ul class="filter-list list">
           <li class="filter-list-item">
-            <button type="button" class="filter-btn">Всі</button>
+            <button type="button" class="filter-btn active">Всі</button>
           </li>
           <li class="filter-list-item">
             <button type="button" class="filter-btn">Веб-сайти</button>
@@ -286,5 +286,14 @@
       </div>
     </div>
   </footer>
+  <script>
+
+    const { height: pageHeaderHeight } = document
+      .querySelector(".header")
+      .getBoundingClientRect();
+
+    document.body.style.paddingTop = `${pageHeaderHeight}px`
+
+  </script>
 </body>
 </html>

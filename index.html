@@ -52,7 +52,7 @@
     <!--HERO-->
     <section class="hero">
       <h1 class="title">Эфективні рішення для вашого бизнесу</h1>
-      <button type="button" class="hero-btn btn">Замовити послугу</button>
+      <button type="button" class="hero-btn btn" data-modal-open>Замовити послугу</button>
     </section>
 
     <!--Особливості(Features)-->
@@ -385,14 +385,16 @@
       </div>
     </div>
   </footer>
-  <script>
-
-    const { height: pageHeaderHeight } = document
-      .querySelector(".header")
-      .getBoundingClientRect();
-    
-      document.body.style.paddingTop = `${pageHeaderHeight}px`
-      
-  </script>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal" >
+      <button class="close-btn" data-modal-close>
+        <svg class="close-icon">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/headerheight.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 </html>

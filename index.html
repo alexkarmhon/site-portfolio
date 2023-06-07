@@ -394,7 +394,7 @@
       </button>
       <form action="#" class="modal-form">
 
-        <b>Залиште свої данні, ми вам передзвонимо</b>
+        <b class="modal-descr">Залиште свої данні, ми вам передзвонимо</b>
 
         <label class="modal-form-label">
           Ім'я
@@ -431,22 +431,19 @@
           <textarea class="modal-form-input comment" name="comment" placeholder="Ведіть текст"></textarea>
         </label>
 
-        <label >
-          <input type="checkbox" name="form-agree" id="agree">
-          <p>
-            Погоджуюся з розсилкою та приймаю
-            <span>
-              <a href="">Умови договору</a>
-            </span>
-          </p>
+        <input type="checkbox" name="user-term" id="user-term" class="modal-form-term visually-hidden">
+        <label for="user-term" class="modal-form-check-description">
+          Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
         </label>
+          
+            
         
 
         <button class="modal-form-button" type="submit">Надіслати</button>
       </form>
     </div>
   </div>
-  <!-- <script src="./js/headerheight.js"></script>
-  <script src="./js/modal.js"></script> -->
+  <script src="./js/headerheight.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 </html>

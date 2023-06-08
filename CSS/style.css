@@ -270,7 +270,8 @@ img {
   text-transform: uppercase;
 }
 
-.hero-btn {
+.hero-btn,
+.submit-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,7 +283,7 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: .06em;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
   border-style: none;
   border-radius: 4px;
@@ -294,7 +295,10 @@ img {
 }
 
 .hero-btn:hover, 
-.hero-btn:focus {
+.hero-btn:focus,
+.submit-btn:hover,
+.submit-btn:focus {
+  outline-style: none;
   background-color: var(--accent-sec-color);
 }
 /* ==================HERO END======================= */
@@ -449,6 +453,7 @@ img {
 
 .social-link:hover,
 .social-link:focus {
+  outline-style: none;
   background-color: var(--accent-color);
   fill: var(--main-white-color);
 }
@@ -492,7 +497,8 @@ img {
   padding-bottom: 60px;
 }
 
-.footer .adress-part {
+.footer .adress-part,
+.footer .social-part {
   margin-right: 70px;
 }
 
@@ -519,7 +525,8 @@ img {
   color: var(--main-white-color)
 }
 
-.adress-list .link:hover {
+.adress-list .link:hover,
+.adress-list .link:focus {
   color: var(--accent-color);
 }
 
@@ -551,8 +558,59 @@ img {
 
 .footer .social-link:hover,
 .footer .social-link:focus {
+  outline-style: none;
   background-color: var(--accent-color);
 }
+
+.form-part {
+  
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscr-form-input {
+  display: block;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  background-color: inherit;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: var(--main-white-color);
+}
+
+.subscr-form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscr-form-input:focus {
+  outline-style: none;
+  border-color: var(--accent-color);
+}
+
+.submit-btn-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+
 /* ==================Стилі FOOTER END======================== */
 
 /* =====Стилі PORTFOLIO===== */

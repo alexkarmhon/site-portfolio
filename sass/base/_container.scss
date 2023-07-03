@@ -1,0 +1,14 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.features .container,
+.works .container,
+.team .container,
+.portfolio .container,
+.clients .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

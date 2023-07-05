@@ -42,10 +42,11 @@
     border-radius: 50%;
   
     transition: fill 250ms var(--timing-function-cubic);
-
-    &:hover .close-icon {
-      fill: var(--accent-color);
-    }
   }
 }
 
+.close-icon {
+  .close-btn:hover & {
+    fill: var(--accent-color);
+  }
+}

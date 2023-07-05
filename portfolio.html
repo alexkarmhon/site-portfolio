@@ -20,26 +20,26 @@
     <!--Панель навігації-->
     <div class="container">
       <nav class="nav-bar">
-        <a href="./index.html" class="logo-link"><span>Web</span>Studio</a>
-        <ul class="site-nav list">
-          <li class="item"><a href="./index.html" class="link">Студія</a></li>
-          <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-          <li class="item"><a href="" class="link">Контакти</a></li>
+        <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
+        <ul class="nav-list list">
+          <li class="nav-list__item"><a href="./index.html" class="nav-list__link  link">Студія</a></li>
+          <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link link current">Портфоліо</a></li>
+          <li class="nav-list__item"><a href="" class="nav-list__link link">Контакти</a></li>
         </ul>
       </nav>
       <!--Список контактів-->
       <ul class="contacts-list list">
-        <li class="item">
-          <a href="" class="link">
-            <svg class="contacts-link-icon" width="16" height="12">
+        <li class="contacts-list__item">
+          <a href="" class="contacts-list__link link">
+            <svg class="contacts-link__icon" width="16" height="12">
               <use href="./images/symbol-defs.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
           </a>
         </li>
-        <li class="item">
-          <a href="" class="link">
-            <svg class="contacts-link-icon" width="10" height="16">
+        <li class="contacts-list__item">
+          <a href="" class="contacts-list__link link">
+            <svg class="contacts-link__icon" width="10" height="16">
               <use href="./images/symbol-defs.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11
@@ -235,16 +235,16 @@
   <footer class="footer">
     <div class="container">
       <div class="adress-part">
-        <a href="" class="logo-link"><span>Web</span>Studio</a>
+        <a href="" class="logo"><span class="accent">Web</span>Studio</a>
         <address class="adress">
           <ul class="adress-list list">
-            <li class="adress-list-item">
+            <li class="adress-list__item">
               <a href="" class="map-link link">г. Київ, пр-т Лесі Українки, 26</a>
             </li>
-            <li class="adress-list-item">
+            <li class="adress-list__item">
               <a href="" class="mail-link link">info@devstudio.com</a>
             </li>
-            <li class="adress-list-item">
+            <li class="adress-list__item">
               <a href="" class="tel-link link">+38 096 111 11 11</a>
             </li>
           </ul>
@@ -293,7 +293,7 @@
             <input class="subscr-form-input" type="email" name="mail" placeholder="E-mail">
           </label>
   
-          <button class="submit-btn" type="submit">
+          <button class="hero-submit-btn btn" type="submit">
             Підписатися
             <svg class="submit-btn-icon">
               <use href="./images/symbol-defs.svg#icon-send"></use>
@@ -304,6 +304,68 @@
   
       </div>
   </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="close-btn btn" data-modal-close>
+        <svg class="close-icon" width="18" height="18">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <form action="#" class="modal-form">
+  
+        <b class="modal-descr">Залиште свої данні, ми вам передзвонимо</b>
+  
+        <label class="modal-form-label">
+          Ім'я
+          <span class="modal-form-field">
+            <input class="modal-form-input" type="text" name="name">
+            <svg class="form-input-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-person-black"></use>
+            </svg>
+          </span>
+        </label>
+  
+        <label class="modal-form-label">
+          Телефон
+          <span class="modal-form-field">
+            <input class="modal-form-input" type="tel" name="tel">
+            <svg class="form-input-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+            </svg>
+          </span>
+        </label>
+  
+        <label class="modal-form-label">
+          Пошта
+          <span class="modal-form-field">
+            <input class="modal-form-input" type="email" name="email">
+            <svg class="form-input-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-email-black"></use>
+            </svg>
+          </span>
+        </label>
+  
+        <label class="modal-form-label">
+          Коментар
+          <textarea class="modal-form-input comment" name="comment" placeholder="Ведіть текст"></textarea>
+        </label>
+  
+        <input type="checkbox" name="user-term" id="user-term" class="modal-form-term visually-hidden">
+        <label for="user-term" class="modal-form-check-description">
+          Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+        </label>
+  
+  
+  
+  
+        <button class="modal-form-button" type="submit">Надіслати</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/headerheight.js"></script>
+  <script src="./js/modal.js"></script>
+
   <script>
 
     const { height: pageHeaderHeight } = document

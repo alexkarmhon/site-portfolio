@@ -8,10 +8,6 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header .container {
-  display: flex;
-}
-
 .nav-bar {
   display: flex;
   align-items: center;
@@ -20,14 +16,14 @@
 
 
 
-.site-nav {
+.nav-list {
   display: flex;
 
-  .item+.item {
+  &__item+&__item {
     margin-left: 50px;
   }
   
-  .link {
+  &__link {
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
@@ -51,11 +47,11 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  .item+.item {
+  &__item+&__item {
     margin-left: 50px;
   }
   
-  .link {
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +72,7 @@
   }
 }
 
-.contacts-link-icon {
+.contacts-link__icon {
   margin-right: 10px;
   fill: inherit;
 }

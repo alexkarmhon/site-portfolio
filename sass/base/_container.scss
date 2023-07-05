@@ -2,13 +2,32 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+
+  .header & {
+  display: flex;
 }
 
-.features .container,
-.works .container,
-.team .container,
-.portfolio .container,
-.clients .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  .works &,
+  .team &,
+  .portfolio &,
+  .clients & {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .features & {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
+
+  .footer & {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
+
+
+

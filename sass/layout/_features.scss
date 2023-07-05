@@ -1,14 +1,13 @@
-.features .container {
-  padding-bottom: 0;
-}
-
 .features-list {
   display: flex;
 }
 
-.features-list-item:not(:nth-last-child(1)) {
-  margin-right: 30px;
+.features-list-item{
+  &:not(:nth-last-child(1)) {
+    margin-right: 30px;
+  }
 }
+
 
 .features-image {
   display: flex;

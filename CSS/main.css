@@ -1,4 +1,6 @@
 :root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --main-white-color: #ffffff;
   --sec-white-color: #F5F4FA;
   --hero-footer-color: #2F303A;
@@ -32,7 +34,7 @@
 body {
   background-color: var(--main-white-color);
   color: var(--p-text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -154,7 +156,7 @@ img {
 
 .logo {
   margin-right: 93px;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -527,7 +529,7 @@ img {
   margin-bottom: 50px;
 }
 
-.filter-list-item + .filter-list-item {
+.filter-list__item + .filter-list__item {
   margin-left: 8px;
 }
 
@@ -558,43 +560,21 @@ img {
   margin-left: -30px;
   margin-top: -30px;
 }
-
-.projects-list-item {
+.projects-list__item {
   margin-left: 30px;
   margin-top: 30px;
   border-bottom: 1px solid #EEEEEE;
   transition: box-shadow 250ms var(--timing-function-cubic);
 }
-.projects-list-item .title {
-  margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--link-title-black);
-}
-.projects-list-item:hover {
+.projects-list__item:hover {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.thumb {
+.project-thumb {
   position: relative;
   overflow: hidden;
 }
-
-.card-description {
-  padding: 20px 24px;
-}
-
-.project-description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--p-text-color);
-}
-
-.overlay-description {
+.project-thumb__overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -606,9 +586,28 @@ img {
   transform: translateY(101%);
   transition: transform 250ms var(--timing-function-cubic);
 }
-.projects-list-item .link:hover .overlay-description, .projects-list-item .link:focus .overlay-description {
+.project-link:hover .project-thumb__overlay, .project-link:focus .project-thumb__overlay {
   transform: translateY(0);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.project-card {
+  padding: 20px 24px;
+}
+.project-card__name {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--link-title-black);
+}
+.project-card__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--p-text-color);
 }
 
 .hidden-description {

@@ -1,15 +1,14 @@
 .features-list {
   display: flex;
-}
-
-.features-list-item{
-  &:not(:nth-last-child(1)) {
-    margin-right: 30px;
+  
+  &__item {
+    &:not(:nth-last-child(1)) {
+      margin-right: 30px;
+    }
   }
 }
 
-
-.features-image {
+.feature-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,18 +17,9 @@
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: #F5F4FA;
-}
 
-.features-icon {
-  width: 70px;
-  height: 70px;
-}
-
-.features-list .title {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
 }

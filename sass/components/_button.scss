@@ -4,7 +4,8 @@
   align-items: center;
   cursor: pointer;
 
-  &.hero-submit-btn {
+  &.hero-btn,
+  &.submit-btn {
     min-width: 200px;
     margin: 0 auto;
     padding: 10px 32px;

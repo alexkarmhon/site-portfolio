@@ -38,6 +38,12 @@ img {
   object-fit: cover;
 }
 
+section {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .list {
   list-style: none;
 }
@@ -78,10 +84,4 @@ img {
 
 .title {
   color: var(--link-title-black);
-}
-
-.section {
-  width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
 }

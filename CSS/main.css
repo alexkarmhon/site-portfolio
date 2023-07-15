@@ -65,12 +65,6 @@ img {
   object-fit: cover;
 }
 
-section {
-  width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .list {
   list-style: none;
 }
@@ -129,6 +123,20 @@ section {
   align-items: first baseline;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.works {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .works {
+    display: block;
+  }
 }
 
 .hero-title {

@@ -1,5 +1,8 @@
-.features-list {
-  &__item:not(:last-child) {
+.features-list__item {
+  & .subtitle {
+    text-transform: uppercase;
+  }
+  &:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -39,6 +42,7 @@
     display: flex;
     
     &__item {
+      width: calc((100% - 100px) / 4);
       &:not(:nth-last-child(1)) {
         margin-right: 30px;
         margin-bottom: 0;

@@ -19,9 +19,10 @@ section {
   }
 }
 
-// .works {
-//   display: none;
-//   @media screen and (min-width: 1200px) {
-//     display: block;
-//   }
-// }
+.works {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 0;
+  }
+}

@@ -3,6 +3,7 @@
 }
 
 .team-list {
+  margin-bottom: -30px;
   &__item {
     margin-bottom: 30px;
 
@@ -47,7 +48,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
-    margin-bottom: -30px;
 
     &__item {
       width: calc((100% - 60px) / 2);

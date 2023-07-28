@@ -1,22 +1,24 @@
 .footer {
-  background-color: var(--hero-footer-color);
-  width: 100%;
-  
-  .adress-part,
-  .social-part {
-    margin-right: 70px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--hero-footer-color);  
 }
 
-.footer-call {
-  display: inline-block;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-white-color);
+.adress-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .adress-list {
+    text-align: center;
+  }
 }
 
 .adress-list__item {
@@ -29,9 +31,9 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--host-white);
-    
+
     transition: color 250ms var(--timing-function-cubic);
-    
+
     &:hover,
     &:focus {
       color: var(--accent-color);
@@ -39,59 +41,134 @@
   }
 }
 
-.adress-list .map-link {
-  color: var(--main-white-color)
-}
-
-.social-list {
+.social-part {
   display: flex;
-  justify-content: space-between;
-}
-
-.social-list__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.subscribe-form {
-  display: flex;
-}
-
-.subscribe-form-input {
-  display: block;
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-  margin-right: 12px;
-
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-
-  background-color: inherit;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-
-  color: var(--main-white-color);
-
-  &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
+  .footer-call {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
     letter-spacing: 0.03em;
-    
-    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    color: var(--main-white-color);
+  }
+  .social-list {
+    display: flex;
+    justify-content: space-between;
   }
   
-  &:focus {
-    outline-style: none;
-    border-color: var(--accent-color);
+  .social-list__item:not(:last-child) {
+    margin-right: 10px;
   }
 }
+
+
 
 .submit-btn-icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
 }
+
+// .footer {
+//   background-color: var(--hero-footer-color);
+//   width: 100%;
+  
+//   .adress-part,
+//   .social-part {
+//     margin-right: 70px;
+//   }
+// }
+
+// .footer-call {
+//   display: inline-block;
+//   margin-bottom: 20px;
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14px;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   color: var(--main-white-color);
+// }
+
+// .adress-list__item {
+//   &:not(:last-child) {
+//     margin-bottom: 8px;
+//   }
+
+//   .link {
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: var(--host-white);
+    
+//     transition: color 250ms var(--timing-function-cubic);
+    
+//     &:hover,
+//     &:focus {
+//       color: var(--accent-color);
+//     }
+//   }
+// }
+
+// .adress-list .map-link {
+//   color: var(--main-white-color)
+// }
+
+// .social-list {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .social-list__item:not(:last-child) {
+//   margin-right: 10px;
+// }
+
+// .subscribe-form {
+//   display: flex;
+// }
+
+// .subscribe-form-input {
+//   display: block;
+//   width: 358px;
+//   height: 50px;
+//   padding-left: 16px;
+//   margin-right: 12px;
+
+//   font-size: 16px;
+//   line-height: 1.25;
+//   letter-spacing: 0.03em;
+
+//   background-color: inherit;
+
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   border-radius: 4px;
+
+//   color: var(--main-white-color);
+
+//   &::placeholder {
+//     font-size: 16px;
+//     line-height: 1.25;
+//     display: flex;
+//     align-items: center;
+//     letter-spacing: 0.03em;
+    
+//     color: rgba(255, 255, 255, 0.6);
+//   }
+  
+//   &:focus {
+//     outline-style: none;
+//     border-color: var(--accent-color);
+//   }
+// }
+
+// .submit-btn-icon {
+//   width: 24px;
+//   height: 24px;
+//   margin-left: 10px;
+// }

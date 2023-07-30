@@ -46,6 +46,12 @@
           </a>
         </li>
       </ul>
+  
+      <button type="button" class="mobile-menu-btn">
+        <svg class="mobile-menu-icon">
+          <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
     </div>
   </header>
   <main>
@@ -287,7 +293,8 @@
         <address class="adress">
           <ul class="adress-list list">
             <li class="adress-list__item">
-              <a href="https://goo.gl/maps/pCfmDCSArLuLS6fi6" class="map-link link" target="_blank" rel="noopener noreferrer" >г. Київ, пр-т Лесі Українки, 26</a>
+              <a href="https://goo.gl/maps/pCfmDCSArLuLS6fi6" class="map-link link" target="_blank"
+                rel="noopener noreferrer">г. Київ, пр-т Лесі Українки, 26</a>
             </li>
             <li class="adress-list__item">
               <a href="mailto:info@devstudio.com" class="mail-link link">info@devstudio.com</a>
@@ -337,8 +344,8 @@
         <b class="footer-call">підпишіться на розсилку</b>
         <form action="#" class="subscribe-form" autocomplete="off">
   
-          <label class="subscribe-form-label">
-            <input class="subscribe-form-input" type="email" name="mail" placeholder="E-mail">
+          <label class="subscribe-form__label">
+            <input class="subscribe-form__input" type="email" name="mail" placeholder="E-mail">
           </label>
   
           <button class="submit-btn btn" type="submit">
@@ -348,11 +355,9 @@
             </svg>
           </button>
         </form>
-  
-  
       </div>
+    </div>
   </footer>
-
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="close-btn btn" data-modal-close>
@@ -412,6 +417,6 @@
     </div>
   </div>
   <script src="./js/headerheight.js"></script>
-  <!-- <script src="./js/modal.js"></script> -->
+  <script src="./js/modal.js"></script>
 </body>
 </html>

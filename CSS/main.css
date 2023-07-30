@@ -104,7 +104,6 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  outline: 1px solid teal;
 }
 .header .container {
   display: flex;
@@ -774,23 +773,24 @@ section {
 }
 .filter-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
-.filter-list__item + .filter-list__item {
-  margin-left: 8px;
+.filter-list__item:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filter-btn {
   display: block;
   min-width: 38px;
-  padding: 5.5px 22px;
+  padding: 6px 22px;
   border: 1px solid transparent;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--link-title-black);
   background-color: var(--sec-white-color);
@@ -803,14 +803,7 @@ section {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
-}
 .projects-list__item {
-  margin-right: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid #EEEEEE;
   transition: box-shadow 250ms var(--timing-function-cubic);
@@ -854,17 +847,42 @@ section {
 .project-card__description {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--p-text-color);
 }
 
 .hidden-description {
-  font-size: 18px;
-  line-height: 1.56;
+  font-size: 14px;
+  line-height: 1.555;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 425px) {
+  .hidden-description {
+    font-size: 18px;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .filter-list {
+    justify-content: center;
+  }
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  .projects-list__item {
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-list__item {
+    width: calc((100% - 90px) / 3);
+  }
+}
 .backdrop {
   position: fixed;
   z-index: 2;

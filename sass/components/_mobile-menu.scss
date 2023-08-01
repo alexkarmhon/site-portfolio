@@ -34,11 +34,18 @@
 
 .mobile-menu {
   position: absolute;
+  z-index: 2;
   width: 100%;
   left: 0;
   top: 100%;
+  transform: translateY(-200%);
+  transition: all 1500ms ease;
   background-color: aliceblue;
   padding: 20px;
   text-align: center;
   font-size: 20px;
+}
+
+.mobile-menu.is-open {
+  transform: translateY(0);
 }

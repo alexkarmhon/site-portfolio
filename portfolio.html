@@ -22,7 +22,7 @@
       <nav class="nav-bar">
         <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
         <ul class="nav-list list">
-          <li class="nav-list__item"><a href="./index.html" class="nav-list__link  link">Студія</a></li>
+          <li class="nav-list__item"><a href="./index.html" class="nav-list__link  link ">Студія</a></li>
           <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link link current">Портфоліо</a></li>
           <li class="nav-list__item"><a href="" class="nav-list__link link">Контакти</a></li>
         </ul>
@@ -47,11 +47,13 @@
         </li>
       </ul>
   
-      <button type="button" class="mobile-menu-btn">
-        <svg class="mobile-menu-icon">
-          <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+      <button type="button" class="mobile-menu-btn" data-menu-button>
+        <svg class="mobile-menu-icon" aria-label="Перемикач мобільного меню">
+          <use class="burger-icon" href="./images/symbol-defs.svg#icon-burger-menu"></use>
+          <use class="cross-icon" href="./images/symbol-defs.svg#icon-cross"></use>
         </svg>
       </button>
+  
     </div>
   </header>
   <main>
@@ -358,6 +360,44 @@
       </div>
     </div>
   </footer>
+  
+  <div class="mobile-menu" id="mbm" data-menu>
+    <ul class="mob-nav-list list">
+      <li class="mob-nav-list__item"><a href="./index.html" class="nav-list__link  link">Студія</a></li>
+      <li class="mob-nav-list__item"><a href="./portfolio.html" class="nav-list__link link current">Портфоліо</a></li>
+      <li class="mob-nav-list__item"><a href="" class="nav-list__link link">Контакти</a></li>
+    </ul>
+    
+    <ul class="mob-contacts-list list">
+      <li class="mob-contacts-list__item">
+        <a href="" class="phone-number link">
+          +38 096 111 11 11
+        </a>
+      </li>
+      <li class="mob-contacts-list__item">
+        <a href="" class="mail link">
+          info@devstudio.com
+        </a>
+      </li>
+    </ul>
+    
+    <ul class="social-netlinks-list list">
+      <li class="social-netlinks__item">
+        <a href="" class="link">Instagram</a>
+      </li>
+      <li class="social-netlinks__item">
+        <a href="" class="link">Twitter</a>
+      </li>
+      <li class="social-netlinks__item">
+        <a href="" class="link">Facebook</a>
+      </li>
+      <li class="social-netlinks__item">
+        <a href="" class="link">LinkedIn</a>
+      </li>
+    </ul>
+    
+  </div>
+
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="close-btn btn" data-modal-close>
@@ -417,6 +457,7 @@
     </div>
   </div>
   <script src="./js/headerheight.js"></script>
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 </html>

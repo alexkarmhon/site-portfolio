@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   background-color: var(--main-white-color);
   border-bottom: 1px solid #ececec;
@@ -20,6 +20,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    
+  }
   .nav-list {
     display: flex;
     &__item+&__item {

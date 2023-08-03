@@ -79,7 +79,8 @@
   display: flex;
   margin-bottom: 30px;
   align-items: center;
-  line-height: 12px;
+  font-size: 10px;
+  line-height: 2;
 
   &::before {
     display: inline-block;
@@ -91,6 +92,11 @@
     border-radius: 2px;
     
     transition: all 250ms var(--timing-function-cubic);
+  }
+
+  .policy {
+    display: inline-block;
+    margin-left: 5px;
   }
 }
 
@@ -121,5 +127,17 @@
   &:focus,
   &:hover {
     background-color: var(--accent-sec-color);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal-form-check-description {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form-check-description {
+    font-size: 14px;
   }
 }

@@ -193,16 +193,22 @@ section {
 .mobile-menu {
   position: fixed;
   z-index: 1;
+  display: none;
+  overflow: auto;
   width: 100%;
   height: 100vh;
   left: 0;
   transform: translateY(-100%);
   background-color: inherit;
-  padding: 40px 48px;
-  transition: transform 250ms ease;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  padding-left: 48px;
+  padding-right: 48px;
+  transition: transform 2250ms ease;
 }
 
 .mobile-menu.is-open {
+  display: block;
   transform: translateY(0);
   transition: transform 250ms ease;
 }
@@ -1005,17 +1011,29 @@ section {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 528px;
+  max-width: 95%;
   height: 581px;
+  max-height: 75%;
+  overflow: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--main-white-color);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 .modal-descr {
   display: block;
   font-size: 20px;
@@ -1080,7 +1098,8 @@ section {
   display: flex;
   margin-bottom: 30px;
   align-items: center;
-  line-height: 12px;
+  font-size: 10px;
+  line-height: 2;
 }
 .modal-form-check-description::before {
   display: inline-block;
@@ -1091,6 +1110,10 @@ section {
   border: 2px solid var(--link-title-black);
   border-radius: 2px;
   transition: all 250ms var(--timing-function-cubic);
+}
+.modal-form-check-description .policy {
+  display: inline-block;
+  margin-left: 5px;
 }
 
 .modal-form-term:checked + .modal-form-check-description::before {
@@ -1117,4 +1140,15 @@ section {
 }
 .modal-form-button:focus, .modal-form-button:hover {
   background-color: var(--accent-sec-color);
+}
+
+@media screen and (min-width: 480px) {
+  .modal-form-check-description {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-form-check-description {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */
